@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    background: linear-gradient(to left bottom, lightgreen, lightblue);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+}
+
+/* MAIN CARD */
+.bmi-container{
+    width: 100%;
+    max-width: 700px;   /* 🔥 key for responsiveness */
+    background: rgba(255, 255, 255, .3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+}
+
+/* HEADING */
+h1{
+    font-size: 26px;
+    text-align: center;
+}
+
+/* INPUT GROUP */
+.height,
+.weight,
+.calc{
+    width: 100%;
+}
+
+/* INPUTS */
+.height input,
+.weight input,
+.calc input{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, .4);
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* BUTTON */
+button{
+    width: 100%;
+    background-color: lightgreen;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+/* RESULT TEXT */
+.verdict{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.verdict p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 📱 MOBILE OPTIMIZATION */
+
+@media (max-width: 480px){
+    h1{
+        font-size: 22px;
+    }
+
+    .bmi-container{
+        padding: 15px;
+    }
+
+    button{
+        font-size: 16px;
+    }
+}
